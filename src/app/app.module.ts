@@ -1,22 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule, MatTabsModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { MovieDescriptionComponent } from './movie-description/movie-description.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponentComponent,
-    MovieDescriptionComponent
+    MovieDescriptionComponent,
+    MovieCardComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatTabsModule,
     BrowserModule,
     AppRoutingModule
   ],
