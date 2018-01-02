@@ -2,4 +2,6 @@
   <mat-tab label="Movies">Movies</mat-tab>
   <mat-tab label="Events">Events</mat-tab>
 </mat-tab-group>
-<p>hey</p>
+<ng-template ngFor let-person [ngForOf]="people">
+  <app-movie-card [testMessage] = "person.name"></app-movie-card>
+</ng-template>
