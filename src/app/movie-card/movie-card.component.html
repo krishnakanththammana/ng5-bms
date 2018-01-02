@@ -1,3 +1,11 @@
-<mat-card class="movie-card">
-  {{testMessage.name}}
+<mat-card class="movie-card flex column">
+  <div class="image-section">
+    <img src="{{testMessage.imgUrl}}" alt="">
+  </div>
+  <div class="description-section flex row space-between align-items-center">
+    <span class="bold">{{testMessage.name}}</span>
+    <span>
+        <i class="fas fa-heart"></i>
+    </span>
+  </div>
 </mat-card>

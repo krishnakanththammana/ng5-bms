@@ -8,7 +8,8 @@ import { MovieCardComponent } from '../movie-card/movie-card.component';
 export class HomeComponentComponent implements OnInit {
   people: any[] = [
     {
-      'name': 'Douglas  Pace'
+      'name': 'Thor: Ragnarok',
+      "imgUrl": '../../assets/images/thor.jpg'
     },
     {
       'name': 'Mcleod  Mueller'
