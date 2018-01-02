@@ -1,7 +1,7 @@
 <mat-tab-group>
   <mat-tab label="Movies">
     <ng-template ngFor let-person [ngForOf]="people">
-      <app-movie-card [testMessage] = "person.name"></app-movie-card>
+      <app-movie-card [testMessage] = "person"></app-movie-card>
     </ng-template>
   </mat-tab>
   <mat-tab label="Events">Events</mat-tab>
