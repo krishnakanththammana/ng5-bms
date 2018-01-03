@@ -5,6 +5,7 @@ import { MovieDescriptionComponent } from './movie-description/movie-description
 
 const routes: Routes = [
   { path: 'home', component: HomeComponentComponent },
+  { path: 'movieDesc/:movID', component: MovieDescriptionComponent },
   { path: 'movieDesc', component: MovieDescriptionComponent }
 ];
 
